@@ -22,3 +22,7 @@ def total_salary(path):
     except Exception as e:
         print(f"Сталася помилка при читанні файлу: {e}")
         return 0, 0
+    
+
+total, average = total_salary("salaries.txt")
+print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
